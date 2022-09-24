@@ -1,26 +1,29 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace susProject.Model
 {
-    public class ResultGroup : IGroup
+    public interface IGroup
     {
-        public string Name { get; set; }
+        string Name { get; set; }
         /// <summary>
         /// Фактическое количество рабочих
         /// </summary>
-        public int ActualWorkersQuantity { get; set; }
+        int ActualWorkersQuantity { get; set; }
         /// <summary>
         /// Количество оборудования К.об
         /// </summary>
-        public int EquipmentAmount { get; set; }
+        int EquipmentAmount { get; set; }
         /// <summary>
         /// Коэффициент использования площади К.пл
         /// </summary>
-        public double AreaUsageTotalRate { get; set; }
+        double AreaUsageTotalRate { get; set; }
         /// <summary>
         /// Площадь участка S, м^2
         /// </summary>
-        public double LandArea { get; set; }
-        public List<ResultLine> resultLines { get; set; }
+        double LandArea { get; set; }
     }
 }

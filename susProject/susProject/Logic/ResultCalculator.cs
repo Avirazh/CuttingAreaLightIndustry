@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using susProject.Model;
 
 namespace susProject.Logic
@@ -21,5 +18,15 @@ namespace susProject.Logic
             Result result = new Result(workshop, products);
             return result;
         }
+
+        public List<ResultGroup> SetResultGroups()
+        {
+            ResultGroup lining = new ResultGroup();
+            ResultGroup covering = new ResultGroup();
+            ResultGroup cutting = new ResultGroup();
+            ResultGroup processing = new ResultGroup();
+            ResultGroup labeling = new ResultGroup();
+        }
+
     }
 }
