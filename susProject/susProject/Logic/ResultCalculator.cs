@@ -9,9 +9,17 @@ namespace susProject.Logic
 {
     public class ResultCalculator
     {
+        public Workshop workshop;
+        public List<Product> products;
+        public ResultCalculator(Workshop workshop,List<Product> products )
+        {
+            this.workshop = workshop;
+            this.products = products;
+        }
         public Result Calculate()
         {
-            throw new NotImplementedException();
+            Result result = new Result(workshop, products);
+            return result;
         }
     }
 }
