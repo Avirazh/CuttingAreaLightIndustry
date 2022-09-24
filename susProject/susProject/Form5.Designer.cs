@@ -199,7 +199,7 @@
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(910, 363);
+            this.textBox10.Location = new System.Drawing.Point(910, 380);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(309, 26);
             this.textBox10.TabIndex = 22;
@@ -208,7 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1231, 661);
+            this.ClientSize = new System.Drawing.Size(1328, 661);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox9);

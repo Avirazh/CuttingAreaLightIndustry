@@ -77,7 +77,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label1.Location = new System.Drawing.Point(430, 53);
+            this.label1.Location = new System.Drawing.Point(466, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(204, 29);
             this.label1.TabIndex = 0;
@@ -313,7 +313,7 @@
             // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(776, 526);
+            this.textBox15.Location = new System.Drawing.Point(776, 513);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(309, 26);
             this.textBox15.TabIndex = 30;
@@ -350,7 +350,7 @@
             // 
             // label19
             // 
-            this.label19.Location = new System.Drawing.Point(772, 570);
+            this.label19.Location = new System.Drawing.Point(772, 554);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(313, 32);
             this.label19.TabIndex = 35;
@@ -358,7 +358,7 @@
             // 
             // textBox18
             // 
-            this.textBox18.Location = new System.Drawing.Point(776, 605);
+            this.textBox18.Location = new System.Drawing.Point(776, 589);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(309, 26);
             this.textBox18.TabIndex = 36;
@@ -398,7 +398,7 @@
             // 
             this.label22.Location = new System.Drawing.Point(772, 634);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(313, 32);
+            this.label22.Size = new System.Drawing.Size(313, 42);
             this.label22.TabIndex = 41;
             this.label22.Text = "Площадь стола для проверки качества сбори и комплектовки Sкомп";
             // 

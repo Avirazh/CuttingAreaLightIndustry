@@ -40,6 +40,8 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -136,11 +138,30 @@
             this.textBox6.Size = new System.Drawing.Size(309, 26);
             this.textBox6.TabIndex = 13;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label7.Location = new System.Drawing.Point(116, 356);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(305, 29);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Количество материалов:";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(438, 356);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(212, 26);
+            this.textBox7.TabIndex = 15;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1165, 683);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox5);
@@ -174,5 +195,7 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox7;
     }
 }
