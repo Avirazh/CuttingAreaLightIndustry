@@ -1,0 +1,15 @@
+C:\Users\User\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\bin\Debug\susProject.exe.config
+C:\Users\User\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\bin\Debug\susProject.exe
+C:\Users\User\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\bin\Debug\susProject.pdb
+C:\Users\User\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\obj\Debug\susProject.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\obj\Debug\susProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\obj\Debug\susProject.Form1.resources
+C:\Users\User\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\obj\Debug\susProject.Form2.resources
+C:\Users\User\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\obj\Debug\susProject.Form3.resources
+C:\Users\User\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\obj\Debug\susProject.Form4.resources
+C:\Users\User\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\obj\Debug\susProject.Form5.resources
+C:\Users\User\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\obj\Debug\susProject.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\obj\Debug\susProject.csproj.GenerateResource.cache
+C:\Users\User\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\obj\Debug\susProject.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\obj\Debug\susProject.exe
+C:\Users\User\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\obj\Debug\susProject.pdb

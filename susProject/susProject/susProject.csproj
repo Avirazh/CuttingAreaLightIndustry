@@ -76,6 +76,16 @@
     <Compile Include="Form5.Designer.cs">
       <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Logic\ResultCalculator.cs" />
+    <Compile Include="Logic\Test.cs" />
+    <Compile Include="Model\Material.cs" />
+    <Compile Include="Model\Product.cs" />
+    <Compile Include="Model\ResultTable\IGroup.cs" />
+    <Compile Include="Model\ResultTable\OneLineGroup.cs" />
+    <Compile Include="Model\ResultTable\Result.cs" />
+    <Compile Include="Model\ResultTable\ResultGroup.cs" />
+    <Compile Include="Model\ResultTable\ResultLine.cs" />
+    <Compile Include="Model\Workshop.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
