@@ -83,10 +83,55 @@
         /// <summary>
         /// Площадь прочего об-я (настилание) Sпр.об.
         /// </summary>
-        public double LayingEquipmentArea { get; set; }
+        public double CoveringEquipmentArea { get; set; }
         /// <summary>
         /// Площадь стола для проверки качества сбори и комплектовки Sкомп
         /// </summary>
         public double QualityCheckTableArea { get; set; }
+
+        /// <summary>
+        /// Площадь обмелов.уч. Sоб
+        /// </summary>
+        public double LiningArea { get; set; }
+        /// <summary>
+        /// Площадь настил. Sнаст
+        /// </summary>
+        public double CoveringArea { get; set; }
+        /// <summary>
+        /// Площадь выр.дет. Sвыр
+        /// </summary>
+        public double CuttingDetailsArea { get; set; }
+        /// <summary>
+        /// Площадь обраб.кроя Sобр.кр
+        /// </summary>
+        public double CutProcessingArea { get; set; }
+        /// <summary>
+        /// Площадь комплектов-я. Sкомп
+        /// </summary>
+        public double GatheringArea { get; set; }
+        /// <summary>
+        /// Площадь нумер. Sнум
+        /// </summary>
+        public double NumeratingArea { get; set; }
+        /// <summary>
+        /// Площадь печ.ярлык. и оформл.док. Sо.д
+        /// </summary>
+        public double BrandingArea { get; set; }
+        /// <summary>
+        /// Площадь дублир-я Sдубл
+        /// </summary>
+        public double DuplicationArea { get; set; }
+        /// <summary>
+        /// Площадь обр.деф.полот. Sдеф.пл
+        /// </summary>
+        public double DefectProcessingArea { get; set; }
+        /// <summary>
+        /// Площадь уч.хранения Sскл.кр
+        /// </summary>
+        public double StockArea { get; set; }
+        /// <summary>
+        /// Площадь раскр. цеха Sраскр
+        /// </summary>
+        public double CuttingRoomArea { get; set; }
     }
 }

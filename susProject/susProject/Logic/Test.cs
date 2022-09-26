@@ -15,16 +15,20 @@ namespace susProject.Logic
         Product productTwo = new Product();
 
         List<Product> products = new List<Product>();
+        List<Material> materials = new List<Material>();
 
         Material materialOne = new Material();
         Material materialTwo = new Material();
         public Test()
         {
+            materials.Add(materialOne);
+            materials.Add(materialTwo);
+
             SetWorkshop(workshop);
             productOne.AddMaterial(materialOne);
             SetProduct(productOne);
             SetMaterial(materialOne, productOne);
-            ResultCalculator testcalc = new ResultCalculator(workshop, products);
+            ResultCalculator testcalc = new ResultCalculator(workshop, products, materials);
             testcalc.Calculate();
         }
         public void SetWorkshop(Workshop workshop)
@@ -43,7 +47,7 @@ namespace susProject.Logic
             workshop.FabricProdRate = 1;
             workshop.LabelMachineArea = 1;
             workshop.LayerHeight = 1;
-            workshop.LayingEquipmentArea = 1;
+            workshop.CoveringEquipmentArea = 1;
             workshop.LiningCoeff = 1;
             workshop.LiningCompleteneAmount = 1;
             workshop.LiningEquipmentArea = 1;
