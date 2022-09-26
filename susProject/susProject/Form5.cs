@@ -26,5 +26,11 @@ namespace susProject
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.InboxData = textBox1.Text;
+        }
     }
 }

@@ -12,9 +12,13 @@ namespace susProject
 {
     public partial class Form4 : Form
     {
+        public string InboxData = "";
+        List<Button> buttons = new List<Button>();
+
         public Form4()
         {
             InitializeComponent();
+            
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -27,41 +31,32 @@ namespace susProject
 
         }
 
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-            string count = textBox1.Text;
-
-            Button setMaterial = new Button();
-            setMaterial.Text = count;
-            this.Controls.Add(setMaterial);
-
-        }
-
-        private void textBox7_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            char number = e.KeyChar;
-            if (!Char.IsDigit(number))
-            {
-                e.Handled = true;
-            }
-        }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (buttons.Count > 0)
+            {
+                for (int i = 0; i < buttons.Count; i++)
+                {
+                    this.Controls.Remove(buttons[i]);
+                }
+            }
+
             string count = comboBox1.SelectedItem.ToString();
             int count1 = int.Parse(count);
 
-            int top = 50;
-            int left = 100;
+            int top = 270;
+            int left = 285;
+
 
             for (int i = 0; i < count1; i++)
             {
-                Button button = new Button();
-                button.Left = left;
-                button.Top = top;
-                this.Controls.Add(button);
-                Console.WriteLine(1);
-                top += button.Height + 2;
+                Button materialButton = new Button();
+                materialButton.Left = left;
+                materialButton.Top = top;
+                materialButton.Text = $"Материал {i + 1}";
+                buttons.Add(materialButton);
+                this.Controls.Add(materialButton);
+                top += materialButton.Height + 2;
             }
         }
     }
