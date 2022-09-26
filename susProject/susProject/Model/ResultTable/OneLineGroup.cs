@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace susProject.Model.ResultTable
+namespace susProject.Model
 {
     public class OneLineGroup : IGroup
     {
         public string Name { get; set; }
-
         public double EstWorkersQuantity { get; set; }
         public int ActualWorkersQuantity { get; set; }
         public int EquipmentAmount { get; set; }

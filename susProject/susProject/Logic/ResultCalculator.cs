@@ -16,17 +16,16 @@ namespace susProject.Logic
         public Result Calculate()
         {
             Result result = new Result(workshop, products);
+            //calculation methods
             return result;
         }
 
         public List<ResultGroup> SetResultGroups()
         {
             List<ResultGroup> resultGroups = new List<ResultGroup>();
-            ResultGroup lining = new ResultGroup();
-            ResultGroup covering = new ResultGroup();
-            ResultGroup cutting = new ResultGroup();
-            ResultGroup processing = new ResultGroup();
-            ResultGroup labeling = new ResultGroup();
+
+                        
+
             return resultGroups;
         }
 
