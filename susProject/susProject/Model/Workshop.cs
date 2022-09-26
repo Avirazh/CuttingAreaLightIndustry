@@ -89,6 +89,7 @@
         /// </summary>
         public double QualityCheckTableArea { get; set; }
 
+
         /// <summary>
         /// Площадь обмелов.уч. Sоб
         /// </summary>
