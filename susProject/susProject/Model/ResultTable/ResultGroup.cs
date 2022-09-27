@@ -5,10 +5,15 @@ namespace susProject.Model
     public class ResultGroup : IGroup
     {
         public string Name { get; set; }
+
+        /// <summary>
+        /// Расчетное количество рабочих
+        /// </summary>
+        public double EstWorkersQuantity { get; set; }
         /// <summary>
         /// Фактическое количество рабочих
         /// </summary>
-        public int ActualWorkersQuantity { get; set; }
+        public int ActualWorkersQuantity { get; set; }    
         /// <summary>
         /// Количество оборудования К.об
         /// </summary>
