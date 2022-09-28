@@ -71,6 +71,7 @@
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.textBox21 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -82,7 +83,6 @@
             this.label1.Size = new System.Drawing.Size(204, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Параметры цеха";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -99,6 +99,8 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(309, 26);
             this.textBox1.TabIndex = 2;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label3
             // 
@@ -114,6 +116,8 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(309, 26);
             this.textBox2.TabIndex = 4;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label4
             // 
@@ -129,6 +133,8 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(309, 26);
             this.textBox3.TabIndex = 6;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label5
             // 
@@ -145,6 +151,7 @@
             this.textBox4.Size = new System.Drawing.Size(309, 26);
             this.textBox4.TabIndex = 8;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label6
             // 
@@ -160,6 +167,8 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(309, 26);
             this.textBox5.TabIndex = 10;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label7
             // 
@@ -168,7 +177,6 @@
             this.label7.Size = new System.Drawing.Size(313, 33);
             this.label7.TabIndex = 11;
             this.label7.Text = "Площадь 1ого стола, S ст. об., м2";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // textBox6
             // 
@@ -177,6 +185,7 @@
             this.textBox6.Size = new System.Drawing.Size(309, 26);
             this.textBox6.TabIndex = 12;
             this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.textBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label8
             // 
@@ -192,6 +201,8 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(309, 26);
             this.textBox7.TabIndex = 14;
+            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.textBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label9
             // 
@@ -207,6 +218,8 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(309, 26);
             this.textBox8.TabIndex = 16;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            this.textBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label10
             // 
@@ -215,7 +228,6 @@
             this.label10.Size = new System.Drawing.Size(327, 64);
             this.label10.TabIndex = 17;
             this.label10.Text = "Площадь прочего оборудования (вырезания деталей) Sвыр.пр.об., м2";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // textBox9
             // 
@@ -223,6 +235,8 @@
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(309, 26);
             this.textBox9.TabIndex = 18;
+            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
+            this.textBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label11
             // 
@@ -239,6 +253,7 @@
             this.textBox10.Size = new System.Drawing.Size(309, 26);
             this.textBox10.TabIndex = 20;
             this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
+            this.textBox10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label12
             // 
@@ -255,6 +270,7 @@
             this.textBox11.Size = new System.Drawing.Size(309, 26);
             this.textBox11.TabIndex = 22;
             this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
+            this.textBox11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label13
             // 
@@ -263,7 +279,6 @@
             this.label13.Size = new System.Drawing.Size(327, 43);
             this.label13.TabIndex = 23;
             this.label13.Text = "Площадь дублирующего пресса Sпр, м2";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label14
             // 
@@ -272,7 +287,6 @@
             this.label14.Size = new System.Drawing.Size(327, 43);
             this.label14.TabIndex = 24;
             this.label14.Text = "Площадь канцелярского стола Sст., м2";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // textBox12
             // 
@@ -280,6 +294,8 @@
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(309, 26);
             this.textBox12.TabIndex = 25;
+            this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
+            this.textBox12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label15
             // 
@@ -295,6 +311,8 @@
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(309, 26);
             this.textBox13.TabIndex = 27;
+            this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
+            this.textBox13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label16
             // 
@@ -310,6 +328,8 @@
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(309, 26);
             this.textBox14.TabIndex = 29;
+            this.textBox14.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
+            this.textBox14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // textBox15
             // 
@@ -317,6 +337,8 @@
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(309, 26);
             this.textBox15.TabIndex = 30;
+            this.textBox15.TextChanged += new System.EventHandler(this.textBox15_TextChanged);
+            this.textBox15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label17
             // 
@@ -332,6 +354,8 @@
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(309, 26);
             this.textBox16.TabIndex = 32;
+            this.textBox16.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
+            this.textBox16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label18
             // 
@@ -347,6 +371,8 @@
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(309, 26);
             this.textBox17.TabIndex = 34;
+            this.textBox17.TextChanged += new System.EventHandler(this.textBox17_TextChanged);
+            this.textBox17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label19
             // 
@@ -362,6 +388,8 @@
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(309, 26);
             this.textBox18.TabIndex = 36;
+            this.textBox18.TextChanged += new System.EventHandler(this.textBox18_TextChanged);
+            this.textBox18.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label20
             // 
@@ -377,6 +405,8 @@
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(309, 26);
             this.textBox19.TabIndex = 38;
+            this.textBox19.TextChanged += new System.EventHandler(this.textBox19_TextChanged);
+            this.textBox19.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label21
             // 
@@ -385,7 +415,6 @@
             this.label21.Size = new System.Drawing.Size(313, 45);
             this.label21.TabIndex = 39;
             this.label21.Text = "Площадь прочего об-я (настилание) Sпр.об.";
-            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // textBox20
             // 
@@ -393,6 +422,8 @@
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(309, 26);
             this.textBox20.TabIndex = 40;
+            this.textBox20.TextChanged += new System.EventHandler(this.textBox20_TextChanged);
+            this.textBox20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label22
             // 
@@ -408,12 +439,25 @@
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(309, 26);
             this.textBox21.TabIndex = 42;
+            this.textBox21.TextChanged += new System.EventHandler(this.textBox21_TextChanged);
+            this.textBox21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(458, 732);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(225, 38);
+            this.button1.TabIndex = 43;
+            this.button1.Text = "Сохранить";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1165, 752);
+            this.ClientSize = new System.Drawing.Size(1165, 782);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox21);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.textBox20);
@@ -509,5 +553,6 @@
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.Button button1;
     }
 }

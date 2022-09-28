@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<root>
+  <Product name="silu2.0">
+    <ProdReleaseAmount>0,5</ProdReleaseAmount>
+    <QualityCheckTime>10</QualityCheckTime>
+    <NumerationTime>44334</NumerationTime>
+    <LabelPrintTime>4</LabelPrintTime>
+    <DetailsDuplicTime>32</DetailsDuplicTime>
+  </Product>
+  <Product name="muradolh">
+    <ProdReleaseAmount>234</ProdReleaseAmount>
+    <QualityCheckTime>5765</QualityCheckTime>
+    <NumerationTime>765</NumerationTime>
+    <LabelPrintTime>5</LabelPrintTime>
+    <DetailsDuplicTime>32</DetailsDuplicTime>
+  </Product>
+  <Material name="murad1">
+    <CoveringHeight>32</CoveringHeight>
+    <ConsumptionRate>32</ConsumptionRate>
+    <LiningsTime>43</LiningsTime>
+    <CoveringQualityCheckTime>32</CoveringQualityCheckTime>
+    <CoveringBrandingTime>1</CoveringBrandingTime>
+    <CoveringRemovalTime>32</CoveringRemovalTime>
+    <MaterialCoveringTime>2</MaterialCoveringTime>
+    <DetailsCuttingTime>2</DetailsCuttingTime>
+  </Material>
+  <Material name="murad3">
+    <CoveringHeight>23</CoveringHeight>
+    <ConsumptionRate>4</ConsumptionRate>
+    <LiningsTime>4</LiningsTime>
+    <CoveringQualityCheckTime>4</CoveringQualityCheckTime>
+    <CoveringBrandingTime>3</CoveringBrandingTime>
+    <CoveringRemovalTime>45,9</CoveringRemovalTime>
+    <MaterialCoveringTime>65</MaterialCoveringTime>
+    <DetailsCuttingTime>23</DetailsCuttingTime>
+  </Material>
+  <Product name="muradloh">
+    <ProdReleaseAmount>12</ProdReleaseAmount>
+    <QualityCheckTime>5,8</QualityCheckTime>
+    <NumerationTime>234</NumerationTime>
+    <LabelPrintTime>4324</LabelPrintTime>
+    <DetailsDuplicTime>4</DetailsDuplicTime>
+  </Product>
+</root>

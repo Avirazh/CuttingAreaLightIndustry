@@ -34,8 +34,8 @@ namespace susProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form4 forrrm = new Form4();
-            forrrm.ShowDialog();
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
         }
     }
 }
