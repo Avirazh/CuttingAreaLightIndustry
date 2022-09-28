@@ -28,6 +28,23 @@ namespace susProject.Model
         /// Время на дублирование деталей (tпр)
         /// </summary>
         public double DetailsDuplicTime { get; set; }
+        /// <summary>
+        /// Кол-во раб. и обор-я. Пров-ка кач-ва сборки и компл.кроя Kст.комп= Nкомп
+        /// </summary>
+        public double QualityCheckAmount { get; set; }
+        /// <summary>
+        /// Кол-во раб. и обор-я. Нумерац.участок Кнум= Nнум
+        /// </summary>
+        public double NumeratingAmount { get; set; }
+        /// <summary>
+        /// Кол-во раб. и обор-я. Печ.ярлык.участок Кп.я.= Nп.я
+        /// </summary>
+        public double BrandingAmount { get; set; }
+        /// <summary>
+        /// Кол-во раб. и обор-я. Предварит.подготов.участок Кпр= Nпр
+        /// </summary>
+        public double PreparationAreaAmount { get; set; }
+
 
         public List<Material> AddMaterial(Material material)
         {
