@@ -17,8 +17,9 @@ namespace susProject
         XmlDocument xDoc = new XmlDocument();
         Workshop workshop = new Workshop();
 
-        public Form3()
+        public Form3(Workshop workshop)
         {
+            this.workshop = workshop;
             InitializeComponent();
         }
 
@@ -48,7 +49,7 @@ namespace susProject
         }
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
-            workshop.LayingEquipmentArea = double.Parse(textBox7.Text);
+            workshop.LiningEquipmentArea = double.Parse(textBox7.Text);
         }
         private void textBox8_TextChanged(object sender, EventArgs e)
         {
@@ -101,7 +102,7 @@ namespace susProject
         }
         private void textBox20_TextChanged(object sender, EventArgs e)
         {
-            workshop.LayingEquipmentArea = double.Parse(textBox20.Text);
+            workshop.CoveringEquipmentArea = double.Parse(textBox20.Text);
         }
         private void textBox21_TextChanged(object sender, EventArgs e)
         {

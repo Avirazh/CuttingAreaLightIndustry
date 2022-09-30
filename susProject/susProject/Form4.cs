@@ -17,11 +17,14 @@ namespace susProject
         List<Button> buttons = new List<Button>();
         XmlDocument xDoc = new XmlDocument();
         Product product = new Product();
-        string materialName;
+        List<Product> products = new List<Product>();
+        List<Material> materials = new List<Material>();
 
-        public Form4(string materialName)
+        public Form4(List<Product> products, List<Material> materials)
         {
-            this.materialName = materialName;
+            this.materials = materials;
+            this.products = products;
+            product.Materials = new List<Material>();
             InitializeComponent();
         }
 
@@ -39,38 +42,23 @@ namespace susProject
         }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            string text = textBox2.Text;
-            double prodRelease = double.Parse(text);
-
-            product.ProdReleaseAmount = prodRelease;
+            product.ProdReleaseAmount = double.Parse(textBox2.Text);
         }
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            string text = textBox3.Text;
-            double qualityCheck = double.Parse(text);
-
-            product.QualityCheckTime = qualityCheck;
+            product.QualityCheckTime = double.Parse(textBox3.Text);
         }
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-            string text = textBox4.Text;
-            double numTime = double.Parse(text);
-
-            product.NumerationTime = numTime;
+            product.NumerationTime = double.Parse(textBox4.Text);
         }
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-            string text = textBox5.Text;
-            double labelPrint = double.Parse(text);
-
-            product.LabelPrintTime = labelPrint;
+            product.LabelPrintTime = double.Parse(textBox5.Text);
         }
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
-            string text = textBox6.Text;
-            double detaildDub = double.Parse(text);
-
-            product.DetailsDuplicTime = detaildDub;
+            product.DetailsDuplicTime = double.Parse(textBox6.Text);
         }
         private void xmlAdd()
         {
@@ -105,6 +93,7 @@ namespace susProject
 
             prodElem.Attributes.Append(attribute);
 
+            products.Add(product);
             xDoc.Save("Data.xml");
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -143,8 +132,7 @@ namespace susProject
         }
         private void button_Click(object sender, EventArgs e)
         {
-            Material material = new Material();
-            Form5 form5 = new Form5(material, product);
+            Form5 form5 = new Form5(product, materials);
             form5.ShowDialog();
         }
 
@@ -153,5 +141,9 @@ namespace susProject
             xmlAdd();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

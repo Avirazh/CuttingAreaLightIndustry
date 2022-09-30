@@ -75,14 +75,14 @@ namespace susProject.Model
             this.workshop = workshop;
             this.products = products;
 
-            covering.resultLines.Add(matCovering);
-            covering.resultLines.Add(qualityCheckCovering);
-            covering.resultLines.Add(labelCovering);
-            covering.resultLines.Add(cutCovering);
-            covering.resultLines.Add(removeCovering);
+            //covering.resultLines.Add(matCovering);
+            //covering.resultLines.Add(qualityCheckCovering);
+            //covering.resultLines.Add(labelCovering);
+            //covering.resultLines.Add(cutCovering);
+            //covering.resultLines.Add(removeCovering);
 
-            processing.resultLines.Add(qualityCheckProcessing);
-            processing.resultLines.Add(numeratingProcessing);
+            //processing.resultLines.Add(qualityCheckProcessing);
+            //processing.resultLines.Add(numeratingProcessing);
         }
 
     }

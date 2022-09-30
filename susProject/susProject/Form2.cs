@@ -1,4 +1,6 @@
-﻿using System;
+﻿using susProject.Logic;
+using susProject.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,26 +11,37 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace susProject
-{
+{ 
     public partial class Form2 : Form
     {
+        public Workshop workshop = new Workshop();
+        public List<Product> products = new List<Product>();
+        public List<Material> materials = new List<Material>();
         public Form2()
         {
             InitializeComponent();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4(products, materials);
+            form4.ShowDialog();
+
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();  
+            Form3 form3 = new Form3(workshop);  
             form3.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void button3_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();  
-            form4.ShowDialog();
-
-
+            ResultCalculator resultCalculator = new ResultCalculator(workshop, products, materials);
+            Result result = resultCalculator.Calculate();
+            Form6 form6 = new Form6(result);
+            form6.ShowDialog();
         }
     }
 }

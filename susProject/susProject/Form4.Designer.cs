@@ -54,6 +54,7 @@
             this.label1.Size = new System.Drawing.Size(238, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Название изделия:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox1
             // 
@@ -175,7 +176,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(732, 361);
+            this.button1.Location = new System.Drawing.Point(609, 560);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(173, 39);
             this.button1.TabIndex = 17;

@@ -17,11 +17,13 @@ namespace susProject
     {
         XmlDocument xDoc = new XmlDocument();
         Material material = new Material();
+        List<Material> materials;
+        Product product = new Product();
 
-        public Form5(Material material, Product product)
+        public Form5(Product product, List<Material> materials)
         {
-            this.material = material;
-            product.Materials.Add(material);
+            this.product = product;
+            this.materials = materials;
             material.Product = product;
             InitializeComponent();
         }
@@ -121,12 +123,15 @@ namespace susProject
 
             materialElem.Attributes.Append(attribute);
 
+            materials.Add(material);
+
             xDoc.Save("Data.xml");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             xmlAdd();
+            product.Materials.Add(material);
         }
     }
 }

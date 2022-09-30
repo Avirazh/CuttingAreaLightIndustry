@@ -41,4 +41,76 @@
     <LabelPrintTime>4324</LabelPrintTime>
     <DetailsDuplicTime>4</DetailsDuplicTime>
   </Product>
+  <Material name="12">
+    <CoveringHeight>12</CoveringHeight>
+    <ConsumptionRate>1</ConsumptionRate>
+    <LiningsTime>2</LiningsTime>
+    <CoveringQualityCheckTime>1</CoveringQualityCheckTime>
+    <CoveringBrandingTime>1</CoveringBrandingTime>
+    <CoveringRemovalTime>2</CoveringRemovalTime>
+    <MaterialCoveringTime>21</MaterialCoveringTime>
+    <DetailsCuttingTime>1</DetailsCuttingTime>
+  </Material>
+  <Material name="12">
+    <CoveringHeight>2</CoveringHeight>
+    <ConsumptionRate>1</ConsumptionRate>
+    <LiningsTime>2</LiningsTime>
+    <CoveringQualityCheckTime>2</CoveringQualityCheckTime>
+    <CoveringBrandingTime>1</CoveringBrandingTime>
+    <CoveringRemovalTime>2</CoveringRemovalTime>
+    <MaterialCoveringTime>2</MaterialCoveringTime>
+    <DetailsCuttingTime>1</DetailsCuttingTime>
+  </Material>
+  <Product name="1">
+    <ProdReleaseAmount>2</ProdReleaseAmount>
+    <QualityCheckTime>1</QualityCheckTime>
+    <NumerationTime>2</NumerationTime>
+    <LabelPrintTime>2</LabelPrintTime>
+    <DetailsDuplicTime>2</DetailsDuplicTime>
+  </Product>
+  <Material name="12">
+    <CoveringHeight>1</CoveringHeight>
+    <ConsumptionRate>2</ConsumptionRate>
+    <LiningsTime>1</LiningsTime>
+    <CoveringQualityCheckTime>21</CoveringQualityCheckTime>
+    <CoveringBrandingTime>2</CoveringBrandingTime>
+    <CoveringRemovalTime>1</CoveringRemovalTime>
+    <MaterialCoveringTime>2</MaterialCoveringTime>
+    <DetailsCuttingTime>
+    </DetailsCuttingTime>
+  </Material>
+  <Material name="12">
+    <CoveringHeight>1</CoveringHeight>
+    <ConsumptionRate>2</ConsumptionRate>
+    <LiningsTime>1</LiningsTime>
+    <CoveringQualityCheckTime>21</CoveringQualityCheckTime>
+    <CoveringBrandingTime>2</CoveringBrandingTime>
+    <CoveringRemovalTime>1</CoveringRemovalTime>
+    <MaterialCoveringTime>2</MaterialCoveringTime>
+    <DetailsCuttingTime>1</DetailsCuttingTime>
+  </Material>
+  <Product name="1">
+    <ProdReleaseAmount>2</ProdReleaseAmount>
+    <QualityCheckTime>1</QualityCheckTime>
+    <NumerationTime>2</NumerationTime>
+    <LabelPrintTime>21</LabelPrintTime>
+    <DetailsDuplicTime>1</DetailsDuplicTime>
+  </Product>
+  <Material name="1">
+    <CoveringHeight>2</CoveringHeight>
+    <ConsumptionRate>1</ConsumptionRate>
+    <LiningsTime>21</LiningsTime>
+    <CoveringQualityCheckTime>2</CoveringQualityCheckTime>
+    <CoveringBrandingTime>1</CoveringBrandingTime>
+    <CoveringRemovalTime>2</CoveringRemovalTime>
+    <MaterialCoveringTime>1</MaterialCoveringTime>
+    <DetailsCuttingTime>2</DetailsCuttingTime>
+  </Material>
+  <Product name="1">
+    <ProdReleaseAmount>2</ProdReleaseAmount>
+    <QualityCheckTime>1</QualityCheckTime>
+    <NumerationTime>1</NumerationTime>
+    <LabelPrintTime>2</LabelPrintTime>
+    <DetailsDuplicTime>2</DetailsDuplicTime>
+  </Product>
 </root>
