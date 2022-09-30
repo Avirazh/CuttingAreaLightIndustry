@@ -193,36 +193,36 @@ namespace susProject.Logic
             return product.ProdReleaseAmount * product.DetailsDuplicTime / ShiftDurByRate;
         }
         
-        public double CalcGatheringArea(double sum)
+        private double CalcGatheringArea(double sum)
         {
             return Math.Ceiling(sum) * workshop.QualityCheckTableArea / workshop.WorkshopAreaUsageRate;
         }
-        public double CalcNumeratingArea(double sum)
+        private double CalcNumeratingArea(double sum)
         {
             return Math.Ceiling(sum) * workshop.NumerationEquipmentArea / workshop.WorkshopAreaUsageRate;
         }
-        public double CalcBrandingArea(double sum)
+        private double CalcBrandingArea(double sum)
         {
             return Math.Ceiling(sum) * workshop.LabelMachineArea / workshop.WorkshopAreaUsageRate;
         }
-        public double CalcDuplicationArea(double sum)
+        private double CalcDuplicationArea(double sum)
         {
             return Math.Ceiling(sum) * workshop.DuplicationPressArea / workshop.WorkshopAreaUsageRate;
         }
-        public double CalcDefectProcessingArea(double sum)
+        private double CalcDefectProcessingArea(double sum)
         {
             return Math.Ceiling(0.1 * Math.Ceiling(sum)) * workshop.TableArea / workshop.WorkshopAreaUsageRate; 
         }
-        public double CalcStockArea(double sum)
+        private double CalcStockArea(double sum)
         {
             return (workshop.ShelfSize * workshop.CuttingStock * sum) / 
                 (workshop.LayerHeight * workshop.CuttingPacksInOneCell * workshop.WorkshopAreaUsageRate);
         }
-        public double CalcLiningArea(double sum)
+        private double CalcLiningArea(double sum)
         {
             return (Math.Ceiling(sum) * workshop.TableArea + workshop.LiningEquipmentArea) / workshop.WorkshopAreaUsageRate;
         }
-        public double CalcCoveringArea(double sum)
+        private double CalcCoveringArea(double sum)
         {
             return (Math.Ceiling(sum) * workshop.TableArea + workshop.CoveringEquipmentArea) / workshop.WorkshopAreaUsageRate;
         }
@@ -231,55 +231,55 @@ namespace susProject.Logic
             return (Math.Ceiling(sum) * workshop.CuttingMachineArea + workshop.CuttingEquipmentArea) / workshop.WorkshopAreaUsageRate;
         }
 
-        public double CalcCutPacks(Material material)
+        private double CalcCutPacks(Material material)
         {
             return material.CoveringHeight * workshop.LiningCoeff / material.Product.ProdReleaseAmount;
         }
-        public double CalcLiningAmount(Material material)
+        private double CalcLiningAmount(Material material)
         {
             return material.LiningAmount = material.CutPacks / workshop.LiningCompleteneAmount;
         }
-        public double CalcWorkersAmount(Material material)
+        private double CalcWorkersAmount(Material material)
         {
             return (material.LiningWorkersAmount = material.LiningsTime * workshop.LiningCompleteneAmount) / ShiftDurByRate;;
         }
-        public double CalcDailyRequirement(Material material)
+        private double CalcDailyRequirement(Material material)
         {
             return material.ConsumptionRate / 1.5 * material.Product.ProdReleaseAmount;
         }
-        public double CalcCoveringTableAmount(Material material)
+        private double CalcCoveringTableAmount(Material material)
         {
             return (material.DailyRequirement / workshop.FabricProdRate) + 
                 (material.CutPacks *
                 (material.CoveringQualityCheckTime + material.CoveringBrandingTime + material.CoveringCuttingTime + material.CoveringRemovalTime)/
                 workshop.ShiftDuration);
         }
-        public double CalcCoveringWorkers(Material material)
+        private double CalcCoveringWorkers(Material material)
         {
             return (material.DailyRequirement * material.MaterialCoveringTime) / ShiftDurByRate;
         }
-        public double CalcQualityWorkers(Material material)
+        private double CalcQualityWorkers(Material material)
         {
             return (material.CutPacks * material.CoveringQualityCheckTime)/ ShiftDurByRate;  
         }
-        public double CalcBrandingWorkers(Material material)
+        private double CalcBrandingWorkers(Material material)
         {
             return (material.CutPacks * material.CoveringBrandingTime) / ShiftDurByRate;
         }
-        public double CalcCuttingWorkers(Material material)
+        private double CalcCuttingWorkers(Material material)
         {
             return (material.CutPacks * material.CoveringQualityCheckTime)/ ShiftDurByRate;
         }
-        public double CalcRemovalWorkers(Material material)
+        private double CalcRemovalWorkers(Material material)
         {
             return (material.CutPacks * material.CoveringRemovalTime)/ ShiftDurByRate;
         }
-        public double CalcCoveringSpaceWorkers(Material material)
+        private double CalcCoveringSpaceWorkers(Material material)
         {
             return material.CoveringWorkersAmount + material.QualityWorkersAmount
                 + material.BrandingWorkersAmount + material.CuttingWorkersAmount + material.RemovalWorkersAmount;
         }
-        public double CalcCuttingDetailsWorkers(Material material)
+        private double CalcCuttingDetailsWorkers(Material material)
         {
             return (material.CutPacks * material.DetailsCuttingTime) / ShiftDurByRate;
         }

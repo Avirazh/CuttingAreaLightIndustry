@@ -29,3 +29,4 @@ C:\Users\1\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\obj\D
 C:\Users\1\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\obj\Debug\susProject.exe
 C:\Users\1\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\obj\Debug\susProject.pdb
 C:\Users\1\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\obj\Debug\susProject.Form6.resources
+C:\Users\User\Documents\GitHub\CuttingAreaLightIndustry\susProject\susProject\obj\Debug\susProject.Form6.resources

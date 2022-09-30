@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,13 +20,16 @@ namespace susProject
 
         public Form3(Workshop workshop)
         {
+            CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
             this.workshop = workshop;
             InitializeComponent();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            workshop.LiningCoeff = double.Parse(textBox1.Text);
+            string text = textBox1.Text;
+            double  text1 = double.Parse(text);
+            workshop.LiningCoeff = text1;
         }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
@@ -116,6 +120,7 @@ namespace susProject
             {
                 e.Handled = true;
             }
+            
         }
         private void xmlAdd()
         {

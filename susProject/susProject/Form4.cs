@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,7 @@ namespace susProject
 
         public Form4(List<Product> products, List<Material> materials)
         {
+            CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
             this.materials = materials;
             this.products = products;
             product.Materials = new List<Material>();
@@ -39,6 +41,7 @@ namespace susProject
             {
                 e.Handled = true;
             }
+
         }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
